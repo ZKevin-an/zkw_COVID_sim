@@ -11,9 +11,9 @@
 ## 项目基本说明：
 工程包含四份代码，它们的作用为：
 1. SEIR_sim.m：建立了最基本的SEIR模型，并通过曲线图画出了在改模型下病毒传播的数字指标，为最后的仿真模型做测试。
-2. Covid_China_sim：参考武汉学报“多阶段动态时滞动力学模型的COVID⁃19传播分析”，构建了一个基于中国的新冠传播模型，并通过多阶段加时滞的设置将该模型呈现出与中国疫情情况基本吻合的仿真模型，疫情峰值与转折点都与目前情况相同，为最后防控手段采用提供依据。
-3. cellular_automata_sim：建立了一个基本的元胞自动机扩散模型，用于模拟病毒的可视化传播，为最后的可视化模型做测试与启示。
-4. zkw_Covid_visual_sim：根据题目要求作出的新冠传播仿真程序，首先提供了可视化的传播模型，并相应给出了数字指标，通过两者相应验证新冠传播的恐怖，然后根据几份参考论文（参考论文见下面）得到传播的各种参数（如传染率，接触人数，康复率等），放入到自己的传播模型中，传播模型分别是借用了上述的SEIR_sim.m和cellular_automata_sim作出了曲线图和扩散视图，并且程序可以根据戴口罩，消毒，社交隔离，强制隔离来改变各个参数，并看到改变参数后的传播模型，从而给出防疫的依据。
+2. Covid_China_sim.m：参考武汉学报“多阶段动态时滞动力学模型的COVID⁃19传播分析”，构建了一个基于中国的新冠传播模型，并通过多阶段加时滞的设置将该模型呈现出与中国疫情情况基本吻合的仿真模型，疫情峰值与转折点都与目前情况相同，为最后防控手段采用提供依据。
+3. cellular_automata_sim.m：建立了一个基本的元胞自动机扩散模型，用于模拟病毒的可视化传播，为最后的可视化模型做测试与启示。
+4. zkw_Covid_visual_sim.m：根据题目要求作出的新冠传播仿真程序，首先提供了可视化的传播模型，并相应给出了数字指标，通过两者相应验证新冠传播的恐怖，然后根据几份参考论文（参考论文见下面）得到传播的各种参数（如传染率，接触人数，康复率等），放入到自己的传播模型中，传播模型分别是借用了上述的SEIR_sim.m和cellular_automata_sim作出了曲线图和扩散视图，并且程序可以根据戴口罩，消毒，社交隔离，强制隔离来改变各个参数，并看到改变参数后的传播模型，从而给出防疫的依据。
 
 ## 运行代码方式
 `win10`、`matlab 2017b`及以上版本运行即可（更低版本未测试过）
@@ -48,6 +48,22 @@ go on五个按钮，这五个按钮的作用分别为：
 并将更改过的矩阵通过imagesc显示出来。
 
 ## 代码结果展示
+
+1. SEIR_sim.m代码结果：
+![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/SEIR.png)
+2. Covid_China_sim.m代码结果：
+![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/COVID_SEIR.png)
+3. cellular_automata_sim.m代码结果：
+![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/cellular_auto.gif)
+4. zkw_Covid_visual_sim.m代码结果：
+1）无防疫措施，医疗资源匮乏：
+![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/zkw_COVID_sim.gif)
+2）医疗资源充足，带口罩与消毒
+![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/zkw_COVID_sim1.gif)
+3）医疗资源匮乏，实行隔离
+![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/zkw_COVID_sim2.gif)
+4）医疗资源充足，实行隔离
+![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/zkw_COVID_sim3.gif)
 
 ## 参考
 [1]Zhang Liying，LI Dongchen. Analysis of COVID- 19 by Discrete Multi-stage Dynamics System with Time Delay. GeomaticsandInformationScienceofWuhanUniversity. [2020-05].
