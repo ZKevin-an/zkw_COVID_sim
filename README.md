@@ -49,20 +49,28 @@ go on五个按钮，这五个按钮的作用分别为：
 
 ## 代码结果展示
 
-1. SEIR_sim.m代码结果：
+### SEIR_sim.m代码结果：
+
 ![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/SEIR.png)
-2. Covid_China_sim.m代码结果：
+### Covid_China_sim.m代码结果：
+
 ![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/COVID_SEIR.png)
-3. cellular_automata_sim.m代码结果：
+### cellular_automata_sim.m代码结果：
+
 ![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/cellular_auto.gif)
-4. zkw_Covid_visual_sim.m代码结果：
-1）无防疫措施，医疗资源匮乏：
+### zkw_Covid_visual_sim.m代码结果：
+
+#### 无防疫措施，医疗资源匮乏：
+
 ![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/zkw_COVID_sim.gif)
-2）医疗资源充足，带口罩与消毒
+#### 医疗资源充足，带口罩与消毒
+
 ![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/zkw_COVID_sim1.gif)
-3）医疗资源匮乏，实行隔离
+#### 医疗资源匮乏，实行隔离
+
 ![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/zkw_COVID_sim2.gif)
-4）医疗资源充足，实行隔离
+#### 医疗资源充足，实行隔离
+
 ![image](https://github.com/ZKevin-an/zkw_COVID_sim/blob/master/IMAGES/zkw_COVID_sim3.gif)
 
 ## 参考
